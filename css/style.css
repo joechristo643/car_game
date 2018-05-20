@@ -7,7 +7,7 @@ body {
     height: 700px;
     width: 400px;
     display: flex;
-    background: url(../assets/img/road.png) repeat;
+    background: url(assets/img/road.png) repeat;
     background-size: contain;
     margin: 0 auto;
     overflow: hidden;
@@ -35,7 +35,6 @@ img {
 
 .brick {
     top: 0px;
-    /* animation: moveDown 2s linear; */
 }
 
 @keyframes moveDown {
