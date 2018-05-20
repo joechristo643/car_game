@@ -1,0 +1,105 @@
+
+body {
+    margin: 0
+}
+
+.view {
+    height: 700px;
+    width: 400px;
+    display: flex;
+    background: url(../assets/img/road.png) repeat;
+    background-size: contain;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.lane {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+img {
+    height: 30px;
+    width: 30px;
+    transition: all 2s;
+    position: absolute;
+    left: 30px;
+}
+
+#car {
+    top: 600px;
+    z-index: 2;
+}
+
+.brick {
+    top: 0px;
+    /* animation: moveDown 2s linear; */
+}
+
+@keyframes moveDown {
+    0% {
+        top: 10px;
+    }
+    50% {
+        top: 20px;
+    }
+    100% {
+        top: 30px;
+    }
+}
+
+#game_cover {
+    background: rgba(0, 0, 0, 0.2);
+    display: none;
+    height: 700px;
+    width: 400px;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: 24%;
+    font-size: 30px;
+    color: white;
+    font-family: 'VT323', monospace;
+}
+
+#status {
+    text-align: center;
+    margin-top: 250px;
+}
+
+#scorediv {
+    text-align: center;
+    padding: 20px;
+}
+
+#score_val {
+    font-size: 45px;
+}
+
+#blink {
+    animation: blinktext 1s infinite;
+}
+
+@keyframes blinktext {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#info {
+    text-align: center;
+}
+
+@media only screen and (max-width:600px) {
+    #game_cover {
+        left: 0;
+    }
+}
